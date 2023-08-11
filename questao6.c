@@ -7,11 +7,19 @@
 
 int inverter(int n, int invertido){
 
+    while (n >= 1)
+    {
+        invertido = invertido*10 + n%10;
+        n = n/10;
+    }
+
+    return invertido;
 }
 
 
 
 int main(){
 
+    printf("%d", inverter(1234, 0));
     return 0;
 }
