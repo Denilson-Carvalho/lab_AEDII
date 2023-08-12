@@ -14,11 +14,12 @@ int y(int x1, int x2){
 }
 
 int main(){
+
     int x1, x2;
-    printf("Digite dois números inteiros: ");
+    printf("Digite dois numeros inteiros: ");
     scanf("%d %d", &x1, &x2);
 
-    int produto = calcularProdutoRecursivo(x1, x2);
+    int produto = y(x1, x2);
 
     printf("Produto: %d\n", produto);
     
