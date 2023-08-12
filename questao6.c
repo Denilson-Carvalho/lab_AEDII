@@ -16,10 +16,20 @@ int inverter(int n, int invertido){
     return invertido;
 }
 
+int inverter_recursivo(int n, int invertido){
+
+    if (n == 0)
+    {
+        return invertido;
+    }else{
+        invertido = invertido * 10 + n%10;
+        return inverter_recursivo(n/10, invertido);
+    }
+}
 
 
 int main(){
 
-    printf("%d", inverter(1234, 0));
+    printf("%d", inverter_recursivo(48563, 0));
     return 0;
 }
