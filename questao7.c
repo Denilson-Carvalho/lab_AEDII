@@ -16,8 +16,8 @@ int f(int m, int n){
 
 int main(){
     int n, m;
-    n = 10;
-    m = 2;
+    m = 10;
+    n = 2;
     f(m, n);
     
     return 0;

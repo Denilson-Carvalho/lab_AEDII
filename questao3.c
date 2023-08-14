@@ -1,24 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
-void findPythagoreanTriples(int limit) {
-    for (int a = 1; a <= limit; a++) {
-        for (int b = a; b <= limit; b++) {
-            for (int c = b; c <= limit; c++) {
-                if (a * a + b * b == c * c) {
-                    printf("Cateto 1: %d, Cateto 2: %d, Hipotenusa: %d\n", a, b, c);
-                }
+int Triplos_Pitagoricos(int limite){
+    int hipotenusa, a, b;
+    int c1;
+    int c2;
+    for (c1 = 1; c1 < limite; c1++){
+        for(c2 = 1; c2 < limite; c2++){
+            
+            a = c1*c1;
+            b = c2*c2;
+            hipotenusa = sqrt((a+b));
+            if((a+b) == pow(hipotenusa,2)){
+                printf("Cateto 1: %d Cateto 2: %d Hipotenusa: %d\n", c1, c2, hipotenusa);
             }
         }
     }
 }
 
-int main() {
-    int limit;
-    printf("Encontre todos os triplos pitagóricos com até qual valor? ");
-    scanf("%d", &limit);
-
-    printf("Triplos pitagóricos para catetos e hipotenusa até %d:\n", limit);
-    findPythagoreanTriples(limit);
-
-    return 0;
+int main(){
+    Triplos_Pitagoricos(20);
 }

@@ -4,7 +4,6 @@
 //colocar o número inteiro e mandar mostrar em caracter.
 //alguns símbolos não aparecem.
 
-
 int main(){
     
     int i, conta_linha = 0;
@@ -17,8 +16,6 @@ int main(){
         }    
         conta_linha += 1;
     }
-
-
 
     return 0;
 }
